@@ -1,12 +1,13 @@
 {
-  "name": "@js-widgets/example-widget",
+  "name": "@js-widgets/example-calculator",
   "private": false,
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://js-widgets.github.io/example-widget",
+  "homepage": "https://js-widgets.github.io/example-calculator",
   "dependencies": {
+    "big.js": "^5.2.2",
     "postcss-wrap": "^0.0.4",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
@@ -33,6 +34,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "chai": "^4.2.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-prettier": "^3.3.0",
     "gh-pages": "^3.0.0",

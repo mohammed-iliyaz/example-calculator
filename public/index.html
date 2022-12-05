@@ -6,7 +6,6 @@
     <title>A widget example!</title>
     <script src="https://unpkg.com/react@17.0.1/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@17.0.1/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/react-intl-bundle@1.0.0/dist/react-intl.production.min.js"></script>
   </head>
   <body>
     <section class="section">
@@ -42,7 +41,7 @@
               </div>
               <div class="message-body">
                 <!-- START: WIDGET -->
-                <div id="example-widget" class="widget-instance" data-button-text="Click here">
+                <div id="example-calculator" class="widget-instance" data-button-text="Click here">
                   <progress class="progress is-small is-primary" max="100">0%</progress>
                 </div>
                 <!-- END: WIDGET -->
@@ -102,12 +101,12 @@
     <script>
       document.loadWidgets([
         {
-          instanceId: 'example-widget',
-          language: 'es',
+          instanceId: 'example-calculator',
+          language: 'en',
           onRenderFinish: (domElement) =>
             console.debug('The widget has finished rendering: ', domElement),
           origin: 'https://js-widgets.github.io',
-          renderFunctionName: 'renderExampleWidget',
+          renderFunctionName: 'renderExampleCalculator',
         },
       ]);
     </script>
